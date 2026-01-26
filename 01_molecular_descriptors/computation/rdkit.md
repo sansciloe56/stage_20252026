@@ -1,18 +1,3 @@
----
-jupyter:
-  jupytext:
-    formats: ipynb,py:percent,md
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.18.1
-  kernelspec:
-    display_name: Python 3 (ipykernel)
-    language: python
-    name: python3
----
-
 ## MOLECULAR DESCRIPTORS CALCULATION (3D) - Eg with RDKit
 
 
@@ -66,6 +51,18 @@ else:
 ```
 
 ```python
+## extract list of molecules from their SMILES:
+smiles_list = smiles_cleaned.SMILES
+
+mol_list = []
+
+for s in smiles_list:
+    mol = Chem.MolFromSmiles(s)
+    mol_list.append(mol)
+
+```
+
+```python
 ## add molecule column to df:
 PandasTools.AddMoleculeColumnToFrame(smiles_cleaned, "SMILES", "molecule", includeFingerprints = True)
 smiles_cleaned.molecule = mol_list
@@ -81,14 +78,6 @@ smiles_cleaned.head(2)
 
 ```python
 ## visualise 2D rep of substances from their SMILES (just to see, for fun):
-smiles_list = smiles_cleaned.SMILES
-
-mol_list = []
-
-for s in smiles_list:
-    mol = Chem.MolFromSmiles(s)
-    mol_list.append(mol)
-
 pic = Draw.MolsToGridImage(mol_list, molsPerRow = 4, maxMols = 70, subImgSize = (200, 200), legends = list(smiles_cleaned.name), returnPNG = False)
 #pic
 
