@@ -1,3 +1,3 @@
-# Lien entre les contaminants et le comportemeent de l'invertébré
+# Lien entre les contaminants et le comportement de l'invertébré
 
 To add later.
