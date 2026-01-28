@@ -1,4 +1,4 @@
-name;substance_type;CAS_nb;SMILES;detected
+﻿carbaryl;substance_type;CAS_nb;SMILES;detected
 carbaryl;insecticide;63-25-2;CNC(=O)OC1=CC=CC2=CC=CC=C21;1
 chlorpyrifos;insecticide;2921-88-2;CCOP(=S)(OCC)OC1=NC(=C(C=C1Cl)Cl)Cl;1
 cypermethrine;insecticide;52315-07-8;CC1(C(C1C(=O)OC(C#N)C2=CC(=CC=C2)OC3=CC=CC=C3)C=C(Cl)Cl)C;1
@@ -46,8 +46,8 @@ trichloroethylene;solvent;79-01-6;C(=C(Cl)Cl)Cl;1
 aldrin;insecticide;309-00-2;C1[C@@H]2C=C[C@H]1[C@H]3[C@@H]2[C@]4(C(=C([C@@]3(C4(Cl)Cl)Cl)Cl)Cl)Cl;0
 azinphosMethyl;insecticide;86-50-0;COP(=S)(OC)SCN1C(=O)C2=CC=CC=C2N=N1;0
 chlorfenvinphos;insecticide;470-90-6;CCOP(=O)(OCC)OC(=CCl)C1=C(C=C(C=C1)Cl)Cl;0
-diazinon;insecticide;333-41-5;CCOP(=S)(OCC)OC1=NC(=NC(=C1)C)C(C)C;0
-imidacloprid;insecticide;138261-41-3;C1CN(/C(=N/[N+](=O)[O-])/N1)CC2=CN=C(C=C2)Cl;0
+diazinon;insecticide;333-41-5;CCOP(=S)(OCC)OC1=NC(=NC(=C1)C)C(C)C ;0
+imidacloprid;insecticide;138261-41-3;C1CN(/C(=N/[N+](=O)[O-])/N1)CC2=CN=C(C=C2)Cl ;0
 chloride;ions;16887-00-6;[Cl-];0
 nitrate;ions;14797-55-8;[N+](=O)([O-])[O-];0
 arsenic;metal;7440-38-2;[As];0
@@ -61,7 +61,7 @@ vernolat;other pesticide;1929-77-7;CCCN(CCC)C(=O)SCCC;0
 benzo(b)fluoranthene;PAH;205-99-2;C1=CC=C2C3=C4C(=CC=C3)C5=CC=CC=C5C4=CC2=C1;0
 ciprofloxacin;PPCP;85721-33-1;C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)N4CCNCC4)F)C(=O)O;0
 nonylphenol;PPCP;25154-52-3;CCCCCCCCCC1=CC=CC=C1O;0
-ofloxacin;PPCP;82419-36-1;CC1COC2=C3N1C=C(C(=O)C3=CC(=C2N4CCN(CC4)C)F)C(=O)O;0
+ofloxacin;PPCP;82419-36-1;CC1COC2=C3N1C=C(C(=O)C3=CC(=C2N4CCN(CC4)C)F)C(=O)O ;0
 tramadol;PPCP;27203-92-5;CN(C)C[C@H]1CCCC[C@@]1(C2=CC(=CC=C2)OC)O;0
 chloroacetic acid;solvent;79-11-8;C(C(=O)O)Cl;0
 DMSO;solvent;67-68-5;CS(=O)C;0
