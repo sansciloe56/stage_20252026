@@ -34,7 +34,7 @@ from rdkit.ML.Descriptors import MoleculeDescriptors
 ```python
 ## export dataframe with substances + SMILES:
 smiles_df = pd.read_csv('contaminants.csv', delimiter = ";")
-smiles_df.head(5)
+smiles_df
 
 ```
 
@@ -43,10 +43,12 @@ smiles_df.head(5)
 print(f"Length of database with NAs: {len(smiles_df.SMILES)}")
 
 if smiles_df.SMILES.isna().sum() > 0:
-    smiles_cleaned = smiles_df.loc[smiles_df.SMILES.notna()].copy()#smiles_df.dropna() ## remove NAs (cannot compute molecular descriptor if no SMILES structure present)
+    smiles_cleaned = smiles_df.loc[smiles_df.SMILES.notna()].copy() ## remove NAs (cannot compute molecular descriptor if no SMILES structure present)
     print(f"Length of database without NAs (cleaned version): {len(smiles_cleaned.SMILES)}")
 else:
     None
+
+smiles_cleaned = smiles_cleaned.drop("CAS_nb", axis = 1).copy()
 
 ```
 
@@ -66,7 +68,7 @@ for s in smiles_list:
 ## add molecule column to df:
 PandasTools.AddMoleculeColumnToFrame(smiles_cleaned, "SMILES", "molecule", includeFingerprints = True)
 smiles_cleaned.molecule = mol_list
-smiles_cleaned.head(2)
+smiles_cleaned
 
 ```
 
@@ -107,15 +109,38 @@ des = []
 for mol in smiles_cleaned["molecule"]:
   des.append(Desc_list_func.CalcDescriptors(mol))
 
-rdkit_df = pd.concat([smiles_cleaned, pd.DataFrame(des)], axis = 1)
-rdkit_df.head()
+rdkit_df = pd.concat([smiles_cleaned.reset_index(drop = True), pd.DataFrame(des).reset_index(drop = True)], axis = 1)
+rdkit_df
+
 ```
 
 ```python
 
 ```
 
-#### 4. Export results to .csv file:
+#### 4. Cleaning of MD db (check NAs, replace NAs, etc):
+
+```python
+condition = rdkit_df.iloc[:, 6:223].isna().sum() ## set condition on NA nb threshold
+
+nas_replace = condition[(condition > 0) & (condition <= 10)].index ## indexes of cols where there is less than 10 NAs
+#nas_drop = condition[condition > 10].index
+
+rdkit_df[nas_replace] = rdkit_df[nas_replace].fillna(0) ## replace NA values with 0
+rdkit_df ## check db & how it looks like now
+
+```
+
+```python
+## check if there's still NAs present or not
+rdkit_df.all().isna().sum() ## 0
+```
+
+```python
+
+```
+
+#### 5. Export results to .csv file:
 
 ```python
 rdkit_df.to_csv("rdkit_descriptors.csv", index = False)
