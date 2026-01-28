@@ -1,4 +1,4 @@
-﻿name;substance_type;CAS_nb;SMILES;detected
+name;substance_type;CAS_nb;SMILES;detected
 carbaryl;insecticide;63-25-2;CNC(=O)OC1=CC=CC2=CC=CC=C21;1
 chlorpyrifos;insecticide;2921-88-2;CCOP(=S)(OCC)OC1=NC(=C(C=C1Cl)Cl)Cl;1
 cypermethrine;insecticide;52315-07-8;CC1(C(C1C(=O)OC(C#N)C2=CC(=CC=C2)OC3=CC=CC=C3)C=C(Cl)Cl)C;1
