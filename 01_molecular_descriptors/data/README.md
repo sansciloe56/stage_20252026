@@ -4,4 +4,4 @@
 2. `rdkit_descriptors_nomet.csv`: computation of RDKit molecular descriptors (raw datafile, no cleaning done);
 3. `rdkit_clean_nomet.csv`: cleaned version of the `rdkit_descriptors_nomet.csv` datafile (NAs removal, infinity values check, variance threshold => remove columns with a low variance as little info can be given from these columns, and correlation filtering => remove highly correlated columns as similar, normalisation);
 4. `glasso_results_nomet.csv`: results of gLASSO on cleaned moleular descriptors;
-5. `classes_df_forced_nomet_K7.csv`: clustering GMM sur les descripteurs moléculaires.
+5. `classes_df_forced_nomet_K7.csv`: classes du clustering GMM sur les descripteurs moléculaires.
