@@ -1,0 +1,34 @@
+y,substance,substance_type
+5,1-2Dichloroethane,solvent
+4,1-chlorodecane,other
+4,124-Trichlorobenzene,solvent
+3,4-octylphenol,other
+4,A736,other
+4,Acetone,solvent
+4,Acide Acrylique,solvent
+4,Anthracene,PAH
+4,Benzene,solvent
+4,Benzo(a)pyrene,PAH
+4,Biphenyl,other
+4,Carbaryl,insecticide
+4,Chlorothalonil,other pesticide
+2,Cypermethrine,insecticide
+3,DDD(2-4),insecticide
+4,Dicofol,insecticide
+1,H40,other
+4,Ibuprofen,PPCP
+2,Isodrin,insecticide
+4,L1000,other
+2,Lindane,insecticide
+6,Methomyl,insecticide
+1,Nitric Acid,solvent
+4,Pentachlorophenol,other pesticide
+4,PiperonylButoxide,other
+1,Quinoxyfen,other pesticide
+4,Tebufenozide,insecticide
+2,Tetrachloroethylene,solvent
+5,Trichloroethylene,solvent
+4,Trifluralin,other pesticide
+4,Verapamil,PPCP
+4,alphaEndosulfan,insecticide
+4,betaEndosulfan,insecticide
