@@ -1,4 +1,4 @@
-## DATAFILES for CO-Inertia Analysis:
+## DATAFILES for CO-Inertia Analysis (COIA):
 
 1. `classes_df_forced_nomet_K7.csv`: clustering done on cleaned molecular descriptors and filtered through gLASSO;
 2. `classes_df_nomet_behaviour_K7_IGT.csv`: clustering done on $B$-spline coefficients of behavioural data (IGT metric) on replicates and later aggregating with the median on posteriori porbabilities;
