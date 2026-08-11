@@ -1,6 +1,9 @@
-# Lien entre les contaminants et le comportement des invertébrés
+## The study of the relationship between the molecular structure of chemical contaminants and the diversity of avoidance behaviours in three invertebrates used in aquatic ecotoxicology
 
-Fichiers:
+Codes and datasets produced during the end of my Master's studies internship at INRAE (academic year 2025-2026, November 2025-August 2026 with split periods).
 
-* 01_molecular_descriptors: ce fichier contient le début du pipeline de la première partie du projet et les calculs des descripteurs moléculaires avec Mordred et RDKit. Les données sont dans le fichier 'computation/data' (lire le README.md dans ce dossier data pour avoir le détail sur chaque base de données);
-* 02_invertebrate_behaviour: later
+#### Folders:
+
+* `01_molecular_descriptors`: this folder contains the first part of the project (clustering on substances based on the molecular structure of chemical contaminants) where the computation of molecular descriptors is done, as well as all the data preprocessing, cleaning and such, the clustering with GMM method are also in there;
+* `02_invertebrate_behaviour`: [in_progress, available at the end of August 2026];
+* `03_COIA`: this folder contains the last part of the project, where co-inertia analysis (COIA) was performed to find relationships (another way to answer the main research question of this project, with an unsupervised learning method: COIA).
