@@ -1,6 +1,6 @@
 ## The study of the relationship between the molecular structure of chemical contaminants and the diversity of avoidance behaviours in three invertebrates used in aquatic ecotoxicology
 
-Codes and datasets produced during the end of my Master's studies internship at INRAE (academic year 2025-2026, November 2025-August 2026 with split periods).
+Codes and datasets produced during the end of my Master's studies internship at INRAE (November 2025-August 2026 with split periods).
 
 #### Folders:
 
